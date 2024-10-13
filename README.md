@@ -2,6 +2,7 @@
  Assignment: Considering Bias in Data
 
 Author: Ashwin Naresh
+
 License: This project uses the MIT license.
 
 In this assignment, we use the Wikipedia Pageviews API and the ORES API to collect page quality data on various world politicians. This data will be collected, parsed, and stored in csv files which we will later use to create some tables to help understand the data.
@@ -44,3 +45,12 @@ To replicate this project, run the code blocks in the same order that they are p
 Overall, this project was extremely fun and fulfiling. Python is a really easy language to use and the pandas library makes table operations trivial. One slight issue I was running into was that the data aquisition portion of the code took a very long time to run. Each API call took over a second, and with around 7000 article titles, this small delay adds up quite a bit. There might be a way to batch these requests, but I did not look into that any further. Apart from that small inconvenience, there were no major hurdles in this. After the final dataset was constructed, creating the tables was just a matter of a few lines of code. I think the tables highlight some interesting biases which I'll touch more on in the following section. In conclusion, I think the project goals were easy to follow and the steps made sense. I'm happy with the final result and learned more about biases in the world of data science.
 
 ### Guiding Questions
+
+#### What biases did you expect to find in the data (before you started working with it), and why?
+The concept of article quality was new to me. I didn't actually know that wikipedia has a model that rates the millions of articles on the website. But even without this prior knowledge, I had a feeling that biases would be present. Notably, I had a feeling that "accomplished" politicians' articles would be graded higher than those who were less "accomplished". Furthermore, I expected to see a Western bias, leading to European and North American articles being rated higher than African and Asian ones. These two biases are pretty standard throughout media, and I expected both of them to show up in dataset in one way or another.
+
+#### What might your results suggest about (English) Wikipedia as a data source?
+After going through this project, my initial expectations about bias were somewhat confirmed. While I don't think the politician's success has that much to do with article quality, the geographic region absolutely does. Europe has some of the highest per capita rates for both total articles and "high quality" articles while Africa and parts of Asia are among the lowest. This geographic disparity makes me hesistant to recommend wikipedia as a datasource but I would likely need more evidence to fully back this claim.
+
+#### What might your results suggest about the internet and global society in general?
+I think the results of this project speak to the state of Western Media and the English Internet. It's natural for a culture to have a positive bias toward themselves and a negative bias toward others. This harsh reality is clearly shown in this project as English Speaking politicians are likely to be much higher rated than non enligh speaking ones. This trend likely carries over to countless other fields in a variety of media types. This project has opened my eyes to this type of bias and I will be actively looking out for it in the future.
