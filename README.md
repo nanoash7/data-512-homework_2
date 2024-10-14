@@ -32,6 +32,20 @@ article_quality_no_region.txt: This file was created as output from step 2 and i
 
 wp_politicians_by_country.csv: This file was created as output from step 3 is the fully cleaned and merged dataset that we use for the analysis sections. This dataset contains politician information, article quality scores, and country/region populations. The columns are as follows: article_title,revision_id,article_quality,country,population,region. Note: Population is recorded in millions and region names are fully capitalized.
 
+#### article_quality_no_region.txt and wp_politicians_by_country.csv contain the same columns:
+
+article_title: The full article name of the politician's page.
+
+revision_id: The revision id for the most recent revision of the article page. This is acquired through an API info call.
+
+article_quality: The ORES prediction for the article. This field takes on the following values from best to worst: FA, GA, B, C, Start, and Stub. 
+
+country: The country of the politician.
+
+population: Population of the country in millions.
+
+region: Geographic region of the world. These regions are in all caps (eg: NORTHERN AFRICA, EAST ASIA, etc).
+
 wp_countries-no_match.txt: This file contains a list of countries that did not have match during the merging stage of the data cleaning process.
 
 # Using the Code
