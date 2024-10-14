@@ -21,6 +21,7 @@ The API's we use in this project require Wikipedia authorization tokens. For sec
 
 ## API Documentation
 Pageview API: https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html
+
 ORES API: https://www.mediawiki.org/wiki/ORES#API_usage
 
 Python Documentation: https://docs.python.org/3/
