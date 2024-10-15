@@ -34,7 +34,6 @@ article_quality_no_region.txt: This file was created as output from step 2 and i
 wp_politicians_by_country.csv: This file was created as output from step 3 is the fully cleaned and merged dataset that we use for the analysis sections. This dataset contains politician information, article quality scores, and country/region populations. The columns are as follows: article_title,revision_id,article_quality,country,population,region. Note: Population is recorded in millions and region names are fully capitalized.
 
 #### article_quality_no_region.txt and wp_politicians_by_country.csv contain the same columns:
-
 article_title: The full article name of the politician's page.
 
 revision_id: The revision id for the most recent revision of the article page. This is acquired through an API info call.
@@ -48,6 +47,9 @@ population: Population of the country in millions.
 region: Geographic region of the world. These regions are in all caps (eg: NORTHERN AFRICA, EAST ASIA, etc).
 
 wp_countries-no_match.txt: This file contains a list of countries that did not have match during the merging stage of the data cleaning process.
+
+#### IMPORTANT Note About The Data
+The population data contained in the population_by_country_AUG.2024.csv input file is measured in millions. As a result, there are a few countries with a population of 0, indicating that the population is less than 100,000, preventing the true population from being expressed with 1 decimal place. This results in incorrect per capita calculations. Anyone using this particular file should be aware of this.
 
 # Using the Code
 The code for this project is found in hw2.ipybn (main code), wp_ores_liftwing_example.ipynb (reference material), and wp_page_info_example.ipynb (reference material). The code also references the politicians_by_country_AUG.2024.csv and population_by_country_AUG.2024 files as input.
